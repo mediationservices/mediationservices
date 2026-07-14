@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mediation Services | Professional Conflict Resolution</title>
+<meta name="description" content="Mediation Services offers professional, confidential mediation for family, divorce, workplace, and business disputes.">
+<style>
+  :root {
+    --navy: #1f3a52;
+    --teal: #2f7a6f;
+    --teal-light: #e8f2f0;
+    --gray: #5a6570;
+    --light-bg: #f7f8f9;
+    --border: #e1e5e8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #262c33;
+    line-height: 1.6;
+    background: #fff;
+  }
+  a { color: var(--teal); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+  header {
+    background: var(--navy);
+    color: #fff;
+    padding: 18px 0;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .logo { font-size: 1.3rem; font-weight: 600; letter-spacing: 0.2px; }
+  nav a {
+    color: #dce6ea;
+    margin-left: 24px;
+    font-size: 0.95rem;
+  }
+  nav a:hover { color: #fff; }
+
+  .hero {
+    background: linear-gradient(135deg, var(--navy), #274b66);
+    color: #fff;
+    padding: 80px 0 70px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .hero p {
+    font-size: 1.15rem;
+    color: #cfe0e6;
+    max-width: 620px;
+    margin: 0 auto 30px;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--teal);
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .btn:hover { background: #276358; text-decoration: none; }
+
+  section { padding: 64px 0; }
+  section.alt { background: var(--light-bg); }
+  h2 {
+    font-size: 1.7rem;
+    color: var(--navy);
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .section-intro {
+    text-align: center;
+    color: var(--gray);
+    max-width: 620px;
+    margin: 0 auto 40px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+  }
+  .service-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 24px;
+  }
+  .service-card h3 {
+    color: var(--teal);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .service-card p { color: var(--gray); font-size: 0.95rem; }
+
+  .about-wrap {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .about-text { flex: 2; min-width: 260px; }
+  .about-text p { margin-bottom: 16px; color: #3c454e; }
+  .credentials {
+    flex: 1;
+    min-width: 220px;
+    background: var(--teal-light);
+    border-radius: 10px;
+    padding: 24px;
+  }
+  .credentials h3 {
+    color: var(--navy);
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  .credentials ul { list-style: none; color: var(--gray); font-size: 0.92rem; }
+  .credentials li { margin-bottom: 8px; padding-left: 18px; position: relative; }
+  .credentials li:before {
+    content: "✓";
+    color: var(--teal);
+    position: absolute;
+    left: 0;
+  }
+
+  .process-steps {
+    counter-reset: step;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 28px;
+  }
+  .step {
+    text-align: center;
+  }
+  .step .num {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin: 0 auto 14px;
+  }
+  .step h3 { font-size: 1rem; color: var(--navy); margin-bottom: 8px; }
+  .step p { color: var(--gray); font-size: 0.9rem; }
+
+  .pricing-note {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .pricing-note p { color: var(--gray); margin-bottom: 10px; }
+  .pricing-note .highlight { color: var(--navy); font-weight: 600; font-size: 1.05rem; }
+
+  .contact-wrap {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 34px;
+    min-width: 220px;
+  }
+  .contact-item h3 { color: var(--navy); font-size: 0.95rem; margin-bottom: 8px; }
+  .contact-item a, .contact-item span { font-size: 1.05rem; color: #262c33; }
+
+  footer {
+    background: var(--navy);
+    color: #b9c8d1;
+    text-align: center;
+    padding: 28px 0;
+    font-size: 0.88rem;
+  }
+  footer a { color: #dce6ea; }
+
+  @media (max-width: 600px) {
+    .hero { padding: 60px 0 50px; }
+    .hero h1 { font-size: 1.8rem; }
+    nav a { margin-left: 14px; font-size: 0.85rem; }
+    section { padding: 48px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">Mediation Services</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="container">
+    <h1>A Calmer Path to Resolution</h1>
+    <p>Professional, confidential mediation to help you resolve disputes fairly &mdash; without the cost and stress of court.</p>
+    <a href="#contact" class="btn">Schedule a Consultation</a>
+  </div>
+</div>
+
+<section id="services">
+  <div class="container">
+    <h2>Services</h2>
+    <p class="section-intro">Mediation support for a range of personal, family, and business conflicts.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Family &amp; Divorce Mediation</h3>
+        <p>Work through custody, parenting time, and property division in a respectful, structured setting.</p>
+      </div>
+      <div class="service-card">
+        <h3>Workplace Mediation</h3>
+        <p>Resolve conflicts between coworkers, teams, or management before they escalate.</p>
+      </div>
+      <div class="service-card">
+        <h3>Business &amp; Contract Disputes</h3>
+        <p>Settle disagreements between partners, vendors, or clients without costly litigation.</p>
+      </div>
+      <div class="service-card">
+        <h3>Community &amp; Neighbor Disputes</h3>
+        <p>Find practical, lasting solutions to disagreements between neighbors or community members.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="about">
+  <div class="container">
+    <h2>About</h2>
+    <div class="about-wrap">
+      <div class="about-text">
+        <p>Mediation Services provides a neutral, confidential space where people in conflict can be heard and work toward solutions that make sense for them &mdash; rather than solutions imposed by a court.</p>
+        <p>Every session is guided with patience, discretion, and a focus on practical outcomes. The goal is always the same: help both sides reach an agreement they can live with, as efficiently as possible.</p>
+      </div>
+      <div class="credentials">
+        <h3>Why Mediation</h3>
+        <ul>
+          <li>Confidential and private</li>
+          <li>Faster and less costly than litigation</li>
+          <li>You control the outcome</li>
+          <li>Preserves relationships</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="container">
+    <h2>How It Works</h2>
+    <p class="section-intro">A simple, structured process from first contact to resolution.</p>
+    <div class="process-steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Reach Out</h3>
+        <p>Contact us to briefly describe your situation and schedule an initial consultation.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Consultation</h3>
+        <p>We discuss your goals and determine whether mediation is a good fit.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Mediation Sessions</h3>
+        <p>Both parties meet with the mediator to work through the issues in a structured setting.</p>
+      </div>
+      <div class="step">
+        <div class="num">4</div>
+        <h3>Agreement</h3>
+        <p>We help document the resolution so both sides leave with clarity and confidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="pricing">
+  <div class="container">
+    <h2>Pricing</h2>
+    <div class="pricing-note">
+      <p class="highlight">Rates vary based on case type and number of sessions.</p>
+      <p>Contact us for a free initial consultation and a personalized quote. Flexible scheduling, including evenings, is available.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <p class="section-intro">Reach out to schedule a consultation or ask a question.</p>
+    <div class="contact-wrap">
+      <div class="contact-item">
+        <h3>Email</h3>
+        <a href="mailto:alli.navar@gmail.com">alli.navar@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <h3>Phone</h3>
+        <a href="tel:+16468588549">(646) 858-8549</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    &copy; 2026 Mediation Services &middot; <a href="mailto:alli.navar@gmail.com">alli.navar@gmail.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
