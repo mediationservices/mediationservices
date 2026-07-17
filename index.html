@@ -134,6 +134,50 @@
     left: 0;
   }
 
+  .mediator-wrap {
+    display: flex;
+    gap: 44px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .mediator-photo {
+    flex: 1;
+    min-width: 240px;
+    max-width: 300px;
+    text-align: center;
+  }
+  .mediator-photo img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .mediator-text { flex: 2; min-width: 280px; }
+  .mediator-text h3 {
+    color: var(--navy);
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+  }
+  .mediator-text .title {
+    color: var(--teal);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+  }
+  .mediator-text p { color: #3c454e; margin-bottom: 14px; }
+  .mediator-text ul {
+    list-style: none;
+    color: var(--gray);
+    font-size: 0.92rem;
+  }
+  .mediator-text li { margin-bottom: 8px; padding-left: 18px; position: relative; }
+  .mediator-text li:before {
+    content: "✓";
+    color: var(--teal);
+    position: absolute;
+    left: 0;
+  }
+
   .process-steps {
     counter-reset: step;
     display: grid;
@@ -212,6 +256,7 @@
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About</a>
+      <a href="#mediator">Meet the Mediator</a>
       <a href="#process">Process</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -221,7 +266,7 @@
 <div class="hero">
   <div class="container">
     <h1>A Calmer Path to Resolution</h1>
-    <p>Professional, confidential mediation to help you resolve disputes fairly &mdash; without the cost and stress of court.</p>
+    <p>Professional, confidential mediation to help you resolve disputes fairly, without the cost and stress of court.</p>
     <a href="#contact" class="btn">Schedule a Consultation</a>
   </div>
 </div>
@@ -256,7 +301,7 @@
     <h2>About</h2>
     <div class="about-wrap">
       <div class="about-text">
-        <p>Mediation Services provides a neutral, confidential space where people in conflict can be heard and work toward solutions that make sense for them &mdash; rather than solutions imposed by a court.</p>
+        <p>Mediation Services provides a neutral, confidential space where people in conflict can be heard and work toward solutions that make sense for them, rather than solutions imposed by a court.</p>
         <p>Every session is guided with patience, discretion, and a focus on practical outcomes. The goal is always the same: help both sides reach an agreement they can live with, as efficiently as possible.</p>
       </div>
       <div class="credentials">
@@ -266,6 +311,29 @@
           <li>Faster and less costly than litigation</li>
           <li>You control the outcome</li>
           <li>Preserves relationships</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mediator">
+  <div class="container">
+    <h2>Meet the Mediator</h2>
+    <div class="mediator-wrap">
+      <div class="mediator-photo">
+        <img src="allison-navar.jpg" alt="Allison C. Navar, Esq.">
+      </div>
+      <div class="mediator-text">
+        <h3>Allison C. Navar, Esq.</h3>
+        <p class="title">Attorney &amp; Utah Court-Rostered Mediator</p>
+        <p>Allison brings more than a decade of legal experience to every mediation, with a background spanning contract negotiation, real estate, construction, and estate planning. She has spent her career helping people and organizations resolve disputes efficiently, from high-volume commercial agreements to sensitive family and civil matters.</p>
+        <p>As a Utah court-rostered mediator, Allison guides parties through a structured process focused on clear communication and durable, mutually acceptable outcomes. Her legal background gives her a practical understanding of contracts, negotiation dynamics, and what it takes to reach an agreement that holds up.</p>
+        <ul>
+          <li>J.D., University of Dayton School of Law</li>
+          <li>Utah State Bar, admitted 2013</li>
+          <li>Basic &amp; Domestic Mediation Certificate, Utah Dispute Resolution</li>
+          <li>10+ years of contract, real estate, and dispute resolution experience</li>
         </ul>
       </div>
     </div>
@@ -306,7 +374,7 @@
     <h2>Pricing</h2>
     <div class="pricing-note">
       <p class="highlight">Rates vary based on case type and number of sessions.</p>
-      <p>Contact us for a free initial consultation and a personalized quote. Flexible scheduling, including evenings, is available.</p>
+      <p>Contact us for an initial consultation and a personalized quote. Flexible scheduling, including evenings, is available.</p>
     </div>
   </div>
 </section>
